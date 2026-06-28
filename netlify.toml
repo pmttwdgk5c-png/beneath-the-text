@@ -1,0 +1,75 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/pillars/hell"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/heaven-resurrection"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/rapture"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/atonement"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/original-sin"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/free-will"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/bible"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/sex-gender"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/wealth"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/war-empire"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[redirects]]
+  from = "/pillars/never-healed"
+  to = "/pillars/pillar.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/content/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
