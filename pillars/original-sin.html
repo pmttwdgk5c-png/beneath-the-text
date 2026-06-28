@@ -357,7 +357,7 @@
    ============================================================ */
 
 const $ = (sel, root=document) => root.querySelector(sel);
-const slug = (location.pathname.match(/\/pillars\/([^\/]+)\.html/) || [])[1] || 'hell';
+const slug = 'original-sin';
 
 fetch(`/content/${slug}.json`).then(r=>r.json()).then(render).catch(err=>{
   $('#pillar-root').innerHTML = `<div class="loading">Couldn't load content. (${err})</div>`;
