@@ -96,13 +96,13 @@
   .hero{padding:4.5rem 0 0;}
   .hero .eyebrow{display:block;margin-bottom:1.3rem;}
   .palimpsest-hero{
-    position:relative;font-family:"Fraunces",serif;font-weight:900;
+    position:relative;display:grid;font-family:"Fraunces",serif;font-weight:900;
     font-size:clamp(2.4rem,6.4vw,5rem);line-height:1.02;letter-spacing:-.025em;
     max-width:16ch;cursor:default;margin:.3rem 0 0;
   }
-  .palimpsest-hero .over{position:relative;z-index:2;color:var(--ink);transition:opacity .6s ease;}
+  .palimpsest-hero .over{grid-area:1/1;z-index:2;color:var(--ink);transition:opacity .6s ease;}
   .palimpsest-hero .under{
-    position:absolute;left:0;top:0;z-index:1;color:var(--madder);font-style:italic;
+    grid-area:1/1;z-index:1;color:var(--madder);font-style:italic;
     font-weight:600;opacity:0;transform:translate(2px,3px) rotate(-.4deg);
     transition:opacity .7s ease;pointer-events:none;
   }
