@@ -1,0 +1,116 @@
+{
+  "slug": "atonement",
+  "title": "Atonement — why Jesus died",
+  "kicker": "Pillar 4 of 11 · Why Jesus died",
+  "question": "Did Jesus die to take the punishment we deserved — and is that what the church always taught the cross meant?",
+  "palimpsest": {
+    "over": "Jesus died to take the punishment you deserved.",
+    "under": "For the first thousand years of Christianity, no one explained the cross that way.",
+    "attribution": "The historical record"
+  },
+  "handed": [
+    "That you are guilty before a holy God; that his justice required punishment; that Jesus took your punishment in your place, so that you could go free; that this is <em>the</em> gospel — and that to soften it, or to trade it for some other picture of the cross, is to lose Christianity itself. That last claim is the one this pillar is really about, because in many quarters today <strong>penal substitution</strong> is treated not as one way to understand the cross but as the required belief, without which a person is not really a Christian — and that's the move the historical record can't actually support, even if everything else about penal substitution turned out to be true."
+  ],
+  "threads_heading": "Several readings of the cross, running together from the beginning",
+  "threads": [
+    {
+      "name": "Penal substitution",
+      "became": "dominant",
+      "became_label": "dominant in modern evangelicalism",
+      "detail": "<em>Penal = punishment; substitution = in your place.</em> <strong>Heard as:</strong> \"Jesus took the punishment you deserved,\" \"he paid the price for your sin,\" \"Christ died in your place,\" \"the cross satisfied God's justice.\" <strong>Plainly:</strong> you're guilty before a holy God whose justice must be satisfied; Jesus willingly took the punishment your sin had earned, in your place, so that God could justly forgive you and you could go free. <strong>What's at stake:</strong> what kind of God stands at the center of the story — and whether the cross is fundamentally a <em>courtroom verdict</em> served on Jesus, or something else."
+    },
+    {
+      "name": "Christus Victor",
+      "became": "recovered",
+      "became_label": "the early church's default, recovered",
+      "detail": "Latin, \"Christ the Victor\" — a twentieth-century name for a very old idea. <strong>You were probably never taught it had a name.</strong> <strong>Plainly:</strong> Jesus didn't die mainly to absorb a punishment; he died and rose to <em>defeat</em> the powers holding humanity captive — death, sin, evil. The cross is a rescue and a victory, like breaking open a prison, not a sentence served. <strong>What's at stake:</strong> whether the deepest human problem is <em>guilt to be punished</em> or <em>bondage to be broken</em>."
+    },
+    {
+      "name": "Other early images — ransom, recapitulation, reconciliation",
+      "became": "minority",
+      "became_label": "kept as minority threads",
+      "detail": "<strong>Ransom</strong> (Christ pays the price to free captives, Mark 10:45). <strong>Recapitulation</strong> (in Christ a new humanity replays Adam's story and gets it right — Irenaeus). <strong>Reconciliation</strong> (estranged parties brought back together, 2 Corinthians 5). <strong>Moral example</strong> (the cross shows us what love costs, 1 Peter 2:21). The early and medieval church held these as a many-faceted jewel. <strong>What's at stake:</strong> whether the meaning of the cross is one transaction, or a mystery wide enough to hold many true things at once."
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "Irenaeus of Lyons",
+      "dates": "c. 130–202",
+      "standing": "Bishop, early church father",
+      "note": "Held <em>recapitulation</em>: in Christ, a new Adam, humanity replays its story and gets it right — not a courtroom transaction.",
+      "source": "Against Heresies",
+      "link": "https://www.newadvent.org/fathers/0103.htm"
+    },
+    {
+      "name": "Athanasius",
+      "dates": "c. 296–373",
+      "standing": "Bishop of Alexandria, Doctor of the Church",
+      "note": "In <em>On the Incarnation</em>, the cross is God in human flesh <strong>destroying death from within</strong>, restoring the divine image in us. Not a punishment absorbed; an enemy defeated.",
+      "source": "On the Incarnation",
+      "link": "https://www.newadvent.org/fathers/2802.htm"
+    },
+    {
+      "name": "Anselm of Canterbury",
+      "dates": "1033–1109",
+      "standing": "Archbishop, theologian",
+      "note": "Wrote <em>Cur Deus Homo</em> (\"Why God Became Human\") — the first systematic satisfaction theory. His categories were the <strong>feudal honor</strong> of his time: sin as dishonor, the cross as satisfaction owed. Eleven centuries in, and still not penal substitution as Calvin would frame it.",
+      "source": "Cur Deus Homo (1098)",
+      "link": "https://www.newadvent.org/fathers/200101.htm"
+    },
+    {
+      "name": "N. T. Wright and John Piper",
+      "dates": "contemporary",
+      "standing": "A live theological debate between serious evangelical scholars",
+      "note": "Piper holds penal substitution as the heart and test of orthodoxy; Wright holds the cross at the center of a wider biblical story about evil dethroned and creation reclaimed, and insists penal substitution is <em>a</em> lens, not <em>the</em> lens. Both love the cross. The argument is live and unresolved.",
+      "source": "The Future of Justification (Piper, 2007) · Justification (Wright, 2009)"
+    }
+  ],
+  "ascendancy_heading": "The Jewish covenant the New Testament writers worked in, the idiom that bent it, and the modern movement that made one reading required",
+  "ascendancy": [
+    "This is one of the deepest ironies in the project, and it deserves to be named clearly. The very tradition the New Testament writers were drawing on — the <strong>Jewish sacrificial system</strong> — is now claimed almost exclusively by the penal-substitution camp (\"Christ our Passover,\" \"the Lamb of God,\" \"without shedding of blood is no remission\"). But the Jewish sacrificial system, on its own terms, was not primarily a punishment-transfer. The Passover lamb was not punished in Israel's place; its blood <strong>marked the people of God for rescue</strong>, the way a sign on a doorpost marks a household for the angel of death to pass over. The Day of Atonement scapegoat was not punished either; it <strong>carried sin away</strong> into the wilderness, out of the camp, in a ritual of removal rather than of penalty. The whole apparatus was about purification, identification, covenant, and the wiping clean of what had defiled the community — not about an innocent victim absorbing a penalty owed by the guilty. When Jesus is called the Lamb of God, the New Testament writers are reaching for <em>that</em> Jewish vocabulary, not for a Roman courtroom.",
+    "When the gospel moved into the medieval West, the frame quietly shifted. Anselm wrote <em>Cur Deus Homo</em> in the late eleventh century in a feudal world where every relationship was honor-shaped: sin became <em>dishonor</em> against the divine Lord, and the cross became the <em>satisfaction</em> owed for that dishonor. Five centuries later, the Reformers were working in a different idiom — the rise of legal and forensic categories in early-modern Europe, the courtroom and the contract — and Calvin recast satisfaction in those terms. The Lord became a Judge. The satisfaction became a <em>penalty</em>. The cross became a <em>sentence served</em>. Penal substitution proper had arrived, with a recognizable date and a recognizable cause: not a recovery of Scripture's original frame, but a translation of an older idea into the legal mind of a new age.",
+    "For two and a half centuries after Calvin, penal substitution was <em>a</em> Protestant explanation of the cross among several. It became <em>the</em> explanation — the test of who was really saved — through the modern evangelical movement: nineteenth-century revivalism, the great preachers, the twentieth-century Crusades, the chain of bestselling tracts and gospel presentations that compressed the Christian message into a courtroom diagram you could share on a napkin. By the late twentieth century, in much of conservative Protestantism, to question penal substitution was to question the gospel itself — and that's the move, more than anything else in the doctrine's history, that the historical record actually can't support."
+  ],
+  "cards_heading": "Three passages where the translation and the tradition are doing more interpretive work than the original text asked of them",
+  "cards": [
+    {
+      "ref": "Romans 3:25",
+      "title": "The mercy seat, not the courtroom",
+      "traditional": "<em>\"Whom God hath set forth to be a <strong>propitiation</strong> through faith in his blood…\"</em><br><br>Read as: <em>God's wrath toward sinners was rightly aroused, and the cross is the place where that wrath is turned aside by Christ's blood absorbing it.</em>",
+      "charitable": "<em>\"Whom God set forth as the <strong>place where atonement is made</strong> — the mercy seat — through his blood, received by faith…\"</em><br><br>Read as: <em>the cross is the place where defilement is cleansed and the people of God are made whole — not where divine wrath is absorbed by an innocent victim.</em>",
+      "lever": "The Greek word is <strong>hilastērion</strong>, and it is far more specific than English translations usually suggest. In the Greek Old Testament (the Septuagint, which Paul and the New Testament writers used constantly), <em>hilastērion</em> is the standard word for the <strong>mercy seat</strong> — the gold cover on the Ark of the Covenant in the Temple's Holy of Holies, the place where, on the Day of Atonement, the high priest sprinkled blood for the cleansing of the people's sins (Leviticus 16). When Paul calls Jesus a <em>hilastērion</em>, his Jewish readers heard a temple image: <strong>Jesus is the mercy seat — the place where atonement happens.</strong> Translating <em>hilastērion</em> as \"propitiation\" imports a Roman-legal idea (a sacrifice to <em>turn aside the anger</em> of an offended deity) that the Jewish image does not require. The mercy seat is not where wrath is absorbed by a substitute. It is where <strong>defilement is cleansed and the broken covenant is repaired.</strong>",
+      "flag": "Wrath is genuinely a theme in Romans — Romans 1:18 opens with \"the wrath of God is revealed from heaven against all ungodliness\" — so the recovered reading isn't that God's wrath against evil is a myth. It's that the cross, as Paul describes it with the word <em>hilastērion</em>, is the <strong>mercy seat</strong> — the place where God deals with sin by <em>cleansing</em> it rather than by <em>punishing a substitute for it</em>. The traditional propitiation reading is grammatically possible; the recovered mercy-seat reading is what the Jewish word actually meant in the world Paul wrote in."
+    },
+    {
+      "ref": "Isaiah 53:5–6",
+      "title": "Wounded for our transgressions",
+      "traditional": "<em>\"He was <strong>wounded for our transgressions</strong>, he was <strong>bruised for our iniquities</strong>: the chastisement of our peace was upon him; and with his stripes we are healed… the LORD hath <strong>laid on him the iniquity of us all</strong>.\"</em><br><br>Read as: <em>God transferred the punishment for our sins onto the suffering servant, and his suffering was the legal penalty being satisfied.</em>",
+      "charitable": "<em>\"He was <strong>wounded because of our transgressions</strong>, he was <strong>crushed because of our iniquities</strong>: the chastisement that brings us peace was upon him; and by his bruises we are healed… the LORD has caused the iniquity of us all to <strong>meet in him</strong>.\"</em><br><br>Read as: <em>the servant suffers in solidarity with a sinful people whose sin caused his suffering — a servant whose pain heals because it carries the people's sin away, not because it satisfies a legal penalty.</em>",
+      "lever": "Isaiah 53 is the single most important Old Testament passage in the penal-substitution case, and it does say something powerful about a suffering servant who bears the people's sin. What it says, and what later interpreters have read back into it, are not always the same thing. The Hebrew prepositions in verses 5–6 are ambiguous in a way the English usually flattens: <em>min</em> (translated \"for\") can mean <em>because of</em> (causal) or <em>on behalf of</em> (substitutionary), and the choice between them changes the theology. The Hebrew verb in verse 6 — <em>hipgia</em>, sometimes translated \"laid on\" — more literally means <em>caused to meet</em> or <em>interposed</em>, an image of convergence rather than legal transfer. Most importantly, the <strong>Jewish reading of this passage for two thousand years</strong> has not been that an innocent figure satisfies a legal penalty on behalf of the guilty; it has read the servant variously as Israel itself, as a remnant within Israel, or as a future figure whose suffering serves God's redemptive purposes — but not in the courtroom-and-penalty framework that Western Christianity later read into the text.",
+      "flag": "Isaiah 53 is genuinely substitutionary in <em>some</em> sense — the servant's suffering is somehow connected to the people's sin and to their healing, and the New Testament repeatedly applies the chapter to Jesus' death (Acts 8, 1 Peter 2). The recovered reading isn't that there's no substitution in Isaiah 53; it's that the <em>specifically penal</em> framing — the suffering as legal penalty satisfying judicial wrath — is one possible interpretation of a chapter whose original language and original Jewish context point toward something subtler and more biblically rich."
+    },
+    {
+      "ref": "Mark 10:45",
+      "title": "Ransom, not penalty",
+      "traditional": "<em>\"For even the Son of man came not to be ministered unto, but to minister, and to give his life <strong>a ransom for many</strong>.\"</em><br><br>Often read as: <em>Jesus paid the penalty our sins deserved, the \"ransom\" being a metaphor for the price of God's justice.</em>",
+      "charitable": "<em>\"For even the Son of man came not to be served, but to serve, and to give his life <strong>a ransom for many</strong> — the price paid to free captives held against their will.\"</em><br><br>Read as: <em>the cross is a ransom paid to free people from bondage to sin and death — a rescue from captivity, not a legal penalty satisfying a judge.</em>",
+      "lever": "The Greek word is <strong>lytron</strong>, and in the ancient world it had a specific and concrete meaning: the price paid to <em>free a captive</em> or <em>redeem a slave</em>. The classical and Jewish usage is consistent — <em>lytron</em> is what you pay to a kidnapper to get a hostage back, or what you pay at the temple to redeem a firstborn (Numbers 18:15–16). The cross-as-<em>lytron</em> image is therefore not a courtroom image but a <em>liberation</em> image: humanity is held in bondage to sin, death, and the powers, and Jesus' life is the price that buys our freedom. This is Christus Victor language dressed as ransom language, and it's what the early church ran with for a thousand years before Anselm moved the frame to honor and Calvin moved it to penalty.",
+      "flag": "The ransom-language and the penal-language aren't necessarily incompatible — both involve something costly being given for the sake of someone else's freedom or forgiveness — and the New Testament uses both kinds of imagery without ranking them. The recovered reading isn't that ransom replaces all other atonement images. It's that <em>lytron</em> is the specific word the New Testament actually uses in this verse, and that word carries a captivity-and-liberation image, not a courtroom-and-penalty one. The plurality of metaphors in the New Testament is itself one of the strongest arguments against making any single metaphor required for salvation."
+    }
+  ],
+  "moveon": [
+    "If you find yourself wanting to push back here — wanting to say <em>\"but if Jesus didn't take the punishment we deserved, then what was the cross even for?\"</em> — sit with that for a minute, because I want to ask the question back rather than answer it.",
+    "If the word Paul actually uses in Romans 3:25 is <em>hilastērion</em>, the <strong>mercy seat</strong>, and if the New Testament's Greek-speaking writers had a temple image in their heads rather than a courtroom — who decided that the courtroom would be the master metaphor for English-speaking Christians, and why does the mercy-seat reading have to fight for its place at the table when it's the one that matches the actual word? If the New Testament uses at least five distinct images for what the cross does — ransom, victory, reconciliation, recapitulation, sacrifice — who decided that <em>one</em> of those five would become the test of orthodoxy, and the other four would be optional decorations? If penal substitution in its sharp Reformation form is a thousand years old in a tradition that's two thousand years old — who decided that the <em>second half</em> of church history got to overwrite the <em>first half</em> on what the cross meant, and who profited by the overwriting?",
+    "I'm not going to answer those questions for you. But notice that they're not asking whether penal substitution is true. They're asking who got to decide that <em>one</em> of the New Testament's many images would be promoted to the test of who is in the faith and who is out — and that question is harder to defend than the doctrine itself."
+  ],
+  "matters": "A great deal of how Christians describe God, holiness, justice, forgiveness, and even how parents discipline their children flows from the picture penal substitution paints: the assumption that wrongdoing must be matched by suffering, that justice and punishment are the same word, that love requires someone to be punished before it can be given. Whether you ever set foot in a church, that picture has shaped the moral imagination of the culture you live in — its prisons, its parenting, its politics, its appetite for retribution. The question of whether the cross <em>requires</em> that picture, or whether the Christian tradition holds older and larger ones, isn't just a church question. It's a question about what justice means.",
+  "contested": [
+    "The hardest texts for the recovered reading are real ones. Isaiah 53 speaks of one \"wounded for our transgressions,\" and any honest reader has to deal with the substitutionary weight of the chapter. Romans 3:25 uses <em>hilastērion</em>, and scholars genuinely disagree about whether the propitiation reading (wrath turned aside) or the expiation reading (sin cleansed) is closer to Paul's intent. 2 Corinthians 5:21 says God \"made him to be sin for us, who knew no sin,\" a verse penal substitution leans on hard. Substitution of <em>some</em> kind is genuinely in the Bible.",
+    "The claim of this pillar is <strong>not</strong> that the cross isn't, in some way, \"for us\" or \"in our place\"; it's that the <em>specifically penal</em> framing — the cross as a <em>punishment</em> served on Jesus to satisfy a <em>legal</em> requirement — is one late reading among several true ones, born in feudal and legal categories, and not the only or original meaning of the cross. Anglicans, Catholics, Eastern Orthodox, Wesleyans, Mennonites, and many evangelicals hold the cross at the center of their faith without holding penal substitution as the required mechanism. They are not, by that fact, outside the gospel."
+  ],
+  "close": [
+    "This is for the person who heard the gospel as: <em>you are guilty, God is angry, Jesus stepped between you and his Father's wrath</em> — and who, when they were honest with themselves, was never quite sure whether they were being loved or rescued from the one doing the loving.",
+    "There's good news here, and it's bigger than the picture you were handed. The cross was, from the beginning, a deeper and wider thing than one transaction; it was a rescue from death and evil, a covenant marker like the blood on Israel's doorposts that identified you as one of God's, a reconciliation that undid the long estrangement, a recapitulation in which a new humanity was born in Christ, and — the early church sang this — the trampling-down of death by death.",
+    "Whatever you keep of penal substitution, and you may keep it, well-loved, it is not the gate you have to pass through to be a Christian. The gate has always been Christ himself, and the picture of God you were taught to fear is not the only one the church has ever held. For most of its history, it wasn't even the main one."
+  ]
+}
