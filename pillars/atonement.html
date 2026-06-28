@@ -107,13 +107,13 @@
 
   /* palimpsest reveal */
   .palimpsest{
-    position:relative;margin:2.6rem 0 0;max-width:32ch;cursor:default;
+    display:grid;position:relative;margin:2.6rem 0 0;max-width:32ch;cursor:default;
     font-family:"Fraunces",serif;font-weight:600;
     font-size:clamp(1.1rem,2.6vw,1.45rem);line-height:1.3;
   }
-  .palimpsest .over{position:relative;z-index:2;color:var(--ink);transition:opacity .6s ease;}
+  .palimpsest .over{grid-column:1;grid-row:1;z-index:2;color:var(--ink);transition:opacity .6s ease;}
   .palimpsest .under{
-    position:absolute;left:0;top:0;z-index:1;color:var(--madder);
+    grid-column:1;grid-row:1;z-index:1;color:var(--madder);
     opacity:0;transform:translate(2px,3px) rotate(-.4deg);transition:opacity .7s ease;
     pointer-events:none;
   }
