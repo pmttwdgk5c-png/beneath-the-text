@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="theme-color" content="#E5E1D4">
+<title>Loading… · Beneath the Text</title>
+
+<!-- OG / Twitter tags populated by JS from pillar data -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Beneath the Text">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    /* palette — WCAG-corrected from accessibility audit */
+    --parchment:#E5E1D4;
+    --parchment-raised:#EDEAE0;
+    --parchment-sunken:#DAD5C5;
+    --ink:#221F18;          /* 12.6:1 — AAA */
+    --ink-faded:#565041;    /* darkened from #6B6557 → 6.1:1 — AA */
+    --madder:#9F3A30;       /* 5.1:1 — AA */
+    --madder-deep:#7F2E27;  /* 6.9:1 — AA */
+    --ochre:#7A5C1A;        /* darkened from #A8842C → 4.8:1 — AA */
+    --rule:#C9C2B0;
+    --rule-soft:#D5CFBF;
+    --maxw:760px;          /* 65ch measure for body prose */
+    --maxw-wide:980px;     /* wider for cards / nav */
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--parchment);color:var(--ink);
+    font-family:"EB Garamond",Georgia,serif;font-size:19px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:
+      radial-gradient(circle at 16% 10%,rgba(122,92,26,.04),transparent 40%),
+      radial-gradient(circle at 86% 82%,rgba(159,58,48,.035),transparent 45%);
+  }
+  ::selection{background:rgba(159,58,48,.18);}
+  a{color:var(--madder-deep);text-underline-offset:3px;text-decoration-thickness:1px;}
+  a:hover{color:var(--ink);}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--madder);outline-offset:3px;border-radius:2px;}
+
+  main{position:relative;z-index:1;}
+
+  /* ---------- typography utility classes ---------- */
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-faded);
+  }
+  .mono{font-family:"IBM Plex Mono",monospace;}
+
+  /* ---------- top nav ---------- */
+  header.topbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(229,225,212,.92);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--rule);
+  }
+  .topbar-inner{
+    max-width:var(--maxw-wide);margin:0 auto;padding:.85rem 1.5rem;
+    display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:baseline;gap:.6rem;text-decoration:none;}
+  .brand .glyph{
+    font-family:"Fraunces",serif;font-weight:900;font-size:1.25rem;letter-spacing:-.01em;
+    position:relative;color:var(--ink);
+  }
+  .brand .glyph::after{
+    content:"Beneath the Text";position:absolute;left:.06em;top:.07em;color:var(--madder);
+    opacity:.20;z-index:-1;
+  }
+  .brand .sub{
+    font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--ink-faded);
+  }
+  nav.tnav{display:flex;gap:.2rem;flex-wrap:wrap;}
+  nav.tnav a{
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-faded);text-decoration:none;
+    padding:.6rem .8rem;border-radius:2px;min-height:44px;
+    display:inline-flex;align-items:center;transition:color .2s;
+  }
+  nav.tnav a:hover,nav.tnav a:focus-visible{color:var(--madder-deep);}
+
+  /* ---------- pillar page ---------- */
+  article.pillar{max-width:var(--maxw);margin:0 auto;padding:0 1.5rem 5rem;}
+
+  /* hero */
+  .hero{padding:3rem 0 0;}
+  .hero .kicker{display:inline-block;margin-bottom:1.2rem;}
+  .hero h1{
+    font-family:"Fraunces",serif;font-weight:900;letter-spacing:-.02em;
+    font-size:clamp(2rem,5.2vw,3.4rem);line-height:1.06;margin:0;
+    max-width:22ch;
+  }
+
+  /* palimpsest reveal */
+  .palimpsest{
+    position:relative;margin:2.6rem 0 0;max-width:32ch;cursor:default;
+    font-family:"Fraunces",serif;font-weight:600;
+    font-size:clamp(1.1rem,2.6vw,1.45rem);line-height:1.3;
+  }
+  .palimpsest .over{position:relative;z-index:2;color:var(--ink);transition:opacity .6s ease;}
+  .palimpsest .under{
+    position:absolute;left:0;top:0;z-index:1;color:var(--madder);
+    opacity:0;transform:translate(2px,3px) rotate(-.4deg);transition:opacity .7s ease;
+    pointer-events:none;
+  }
+  .palimpsest.revealed .over{opacity:.15;}
+  .palimpsest.revealed .under{opacity:.92;}
+  .palimpsest .under cite{font-style:normal;font-size:.85em;color:var(--madder-deep);display:block;margin-top:.4rem;font-weight:400;}
+
+  .recover{
+    margin-top:1.4rem;display:inline-flex;align-items:center;gap:.6rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-faded);
+    background:none;border:1px solid var(--rule);padding:.7rem 1rem;
+    border-radius:2px;cursor:pointer;transition:all .2s;min-height:44px;
+  }
+  .recover:hover,.recover:focus-visible{border-color:var(--madder);color:var(--madder-deep);}
+  .recover .dot{width:7px;height:7px;border-radius:50%;background:var(--madder);}
+
+  /* sections */
+  section.block{padding:3rem 0 0;}
+  section.block:first-of-type{padding-top:2.6rem;}
+  .block > .eyebrow{display:block;margin-bottom:.8rem;}
+  .block h2{
+    font-family:"Fraunces",serif;font-weight:900;
+    font-size:clamp(1.45rem,3.2vw,2rem);line-height:1.1;letter-spacing:-.015em;
+    margin:0 0 1rem;
+  }
+  .block > p{margin:0 0 1.1rem;}
+  .block > p:last-child{margin-bottom:0;}
+  .block-intro{font-size:1.05rem;color:var(--ink-faded);font-style:italic;max-width:60ch;margin:-.3rem 0 1.5rem;}
+
+  /* what you were handed */
+  .handed p{font-size:1.08rem;}
+
+  /* threads */
+  .threads{display:flex;flex-direction:column;gap:1rem;margin-top:1.2rem;}
+  .thread{
+    background:var(--parchment-raised);border:1px solid var(--rule-soft);
+    border-radius:4px;padding:1.2rem 1.3rem;border-left:3px solid var(--ink-faded);
+  }
+  .thread[data-became="dominant"]{border-left-color:var(--ink);}
+  .thread[data-became="minority"]{border-left-color:var(--madder);}
+  .thread[data-became="recovered"]{border-left-color:var(--madder);}
+  .thread .t-top{
+    display:flex;justify-content:space-between;gap:1rem;align-items:baseline;
+    flex-wrap:wrap;margin-bottom:.55rem;
+  }
+  .thread .t-name{font-family:"Fraunces",serif;font-weight:600;font-size:1.18rem;line-height:1.2;}
+  .thread .became{
+    font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.14em;
+    text-transform:uppercase;padding:.2rem .5rem;border-radius:2px;white-space:nowrap;
+    color:var(--madder-deep);border:1px solid var(--madder);
+  }
+  .thread[data-became="dominant"] .became{color:var(--ink);border-color:var(--ink-faded);}
+  .thread .t-detail{margin:0;font-size:1rem;}
+  .thread .t-detail strong{font-weight:600;}
+
+  /* in good company */
+  .witnesses{display:flex;flex-direction:column;gap:1rem;margin-top:1rem;}
+  .witness{
+    background:var(--parchment-sunken);border:1px solid var(--rule);
+    border-radius:4px;padding:1.15rem 1.25rem;
+  }
+  .witness .w-head{font-family:"Fraunces",serif;font-weight:600;font-size:1.1rem;margin-bottom:.3rem;}
+  .witness .w-head .w-dates{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-faded);font-weight:400;margin-left:.5rem;}
+  .witness .w-standing{font-size:.92rem;color:var(--madder-deep);margin-bottom:.5rem;}
+  .witness .w-note{font-size:1rem;margin:0;}
+  .witness .w-source{
+    display:inline-block;margin-top:.6rem;font-family:"IBM Plex Mono",monospace;
+    font-size:.66rem;color:var(--madder-deep);text-decoration:none;
+    border-bottom:1px dotted var(--madder);padding-bottom:1px;letter-spacing:.04em;
+  }
+  .witness .w-source:hover{color:var(--ink);}
+  .witness .w-source::after{content:" ↗";}
+
+  /* how one reading rose — runs as long-form prose */
+  .ascendancy{margin-top:.4rem;}
+  .ascendancy p{font-size:1rem;}
+
+  /* TEXT UP CLOSE — the rewrite cards */
+  .upclose-intro{
+    font-size:1.02rem;color:var(--ink-faded);font-style:italic;max-width:60ch;
+    margin:0 0 1.6rem;
+  }
+  .card{
+    background:var(--parchment-raised);border:1px solid var(--rule);border-radius:4px;
+    margin-bottom:1.6rem;overflow:hidden;
+  }
+  .card-head{
+    padding:1.1rem 1.3rem .2rem;background:var(--parchment-raised);
+  }
+  .card-ref{
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--madder-deep);display:block;margin-bottom:.3rem;
+  }
+  .card-title{
+    font-family:"Fraunces",serif;font-weight:600;font-size:1.25rem;line-height:1.2;margin:0;
+  }
+  .card-tabs{
+    display:flex;gap:.05rem;padding:1rem 1.3rem 0;
+    border-bottom:1px solid var(--rule);background:var(--parchment-raised);
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+  }
+  .card-tabs button{
+    font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.1em;
+    text-transform:uppercase;background:none;border:1px solid transparent;
+    border-bottom:none;color:var(--ink-faded);cursor:pointer;
+    padding:.7rem .9rem;border-radius:3px 3px 0 0;transition:all .18s;
+    min-height:44px;white-space:nowrap;
+  }
+  .card-tabs button:hover{color:var(--ink);}
+  .card-tabs button[aria-selected="true"]{
+    color:var(--ink);background:var(--parchment-sunken);
+    border-color:var(--rule);border-bottom-color:var(--parchment-sunken);
+    margin-bottom:-1px;position:relative;
+  }
+  .card-tabs button[aria-selected="true"][data-tab="charitable"]{color:var(--madder-deep);}
+  .card-panel{
+    padding:1.4rem;background:var(--parchment-sunken);
+    border-top:1px solid var(--rule);
+  }
+  .card-panel .p-label{
+    font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-faded);margin-bottom:.7rem;
+  }
+  .card-panel .p-body{font-size:1.04rem;line-height:1.55;}
+  .card-panel[data-active="charitable"] .p-body{
+    color:var(--madder-deep);font-family:"Fraunces",serif;font-weight:400;font-size:1.12rem;
+  }
+  .card-panel[data-active="lever"] .p-body,
+  .card-panel[data-active="flag"] .p-body{font-size:1rem;}
+  .card-panel[data-active="flag"]{
+    background:color-mix(in srgb, var(--madder) 7%, var(--parchment-sunken));
+  }
+  .card-panel[data-active="flag"] .p-label{color:var(--madder-deep);}
+
+  /* before we move on */
+  .moveon{
+    margin-top:2.4rem;border-left:3px solid var(--madder);padding:.2rem 0 .2rem 1.4rem;
+    max-width:62ch;
+  }
+  .moveon p{font-size:1.05rem;margin:0 0 1rem;}
+  .moveon p:last-child{margin-bottom:0;}
+  .moveon p:first-child{font-family:"Fraunces",serif;font-weight:400;color:var(--madder-deep);}
+  .moveon em{font-style:italic;}
+
+  /* where this is contested + why this matters */
+  .contested,.matters{font-size:1.02rem;}
+  .matters{background:var(--parchment-raised);border-left:3px solid var(--ochre);padding:1.3rem 1.5rem;border-radius:0 4px 4px 0;}
+  .matters > .eyebrow{color:var(--ochre);margin-bottom:.5rem;display:block;}
+  .matters h3{font-family:"Fraunces",serif;font-weight:600;font-size:1.15rem;margin:0 0 .6rem;}
+
+  /* who this touches */
+  .close-block{margin-top:4rem;padding-top:2.6rem;border-top:2px solid var(--rule);}
+  .close-block > .eyebrow{display:block;margin-bottom:1rem;}
+  .close-block h2{
+    font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.5rem,3.4vw,2.1rem);
+    line-height:1.1;letter-spacing:-.015em;margin:0 0 1.6rem;
+  }
+  .close-block p{font-size:1.05rem;line-height:1.66;margin-bottom:1.2rem;}
+  .close-block p:last-child{margin-bottom:0;}
+
+  /* footer */
+  footer.foot{
+    border-top:1px solid var(--rule);margin-top:5rem;background:var(--parchment-raised);
+  }
+  .foot-inner{
+    max-width:var(--maxw-wide);margin:0 auto;padding:2.6rem 1.5rem 3.6rem;
+    color:var(--ink-faded);font-size:.95rem;
+    display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;
+  }
+  @media (max-width:680px){.foot-inner{grid-template-columns:1fr;gap:1.6rem;}}
+  .foot-col h4{
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-faded);margin:0 0 .9rem;
+  }
+  .foot-col a{display:block;color:var(--ink);text-decoration:none;padding:.3rem 0;font-size:.95rem;}
+  .foot-col a:hover{color:var(--madder-deep);}
+  .foot-col p{margin:0 0 .7rem;font-size:.92rem;line-height:1.5;}
+
+  /* reduced motion + a11y */
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+    .palimpsest .over{opacity:.18;}
+    .palimpsest .under{opacity:.9;}
+  }
+
+  @media (max-width:680px){
+    body{font-size:18px;}
+    article.pillar{padding:0 1.2rem 4rem;}
+    .card-tabs{padding:.8rem .8rem 0;}
+  }
+
+  /* loading state */
+  .loading{padding:6rem 1.5rem;text-align:center;color:var(--ink-faded);font-family:"IBM Plex Mono",monospace;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/">
+      <span class="glyph">Beneath the Text</span>
+      <span class="sub">reading the tradition wider</span>
+    </a>
+    <nav class="tnav" aria-label="Main">
+      <a href="/">The eleven</a>
+      <a href="/timeline.html">Timeline</a>
+      <a href="/library.html">Library</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="pillar" id="pillar-root">
+    <div class="loading">Loading…</div>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-col">
+      <h4>The project</h4>
+      <a href="/">The eleven questions</a>
+      <a href="/timeline.html">A timeline of the readings</a>
+      <a href="/library.html">Primary sources</a>
+      <a href="/about.html">About the voice</a>
+      <a href="/method.html">On method</a>
+    </div>
+    <div class="foot-col">
+      <h4>On method</h4>
+      <p>Every claim rests on a primary source you can open yourself. Don't trust the writer. Trust the documents — and your own reading of them.</p>
+      <p>The standpoint is one of faith, not against it: a conviction that honest questions are owed honest sources, and that a two-thousand-year, worldwide faith can bear them.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   pillar template — content loaded from ./content/{slug}.json
+   ============================================================ */
+
+const $ = (sel, root=document) => root.querySelector(sel);
+const slug = (location.pathname.match(/\/pillars\/([^\/]+)\.html/) || [])[1] || 'hell';
+
+fetch(`/content/${slug}.json`).then(r=>r.json()).then(render).catch(err=>{
+  $('#pillar-root').innerHTML = `<div class="loading">Couldn't load content. (${err})</div>`;
+});
+
+function render(p){
+  document.title = `${p.title} · Beneath the Text`;
+  $('meta[name="description"]').setAttribute('content', p.question);
+
+  // OG/Twitter
+  ['og:title','og:description','og:url','twitter:title','twitter:description'].forEach(prop=>{
+    let m = document.querySelector(`meta[property="${prop}"], meta[name="${prop}"]`);
+    if(!m){
+      m = document.createElement('meta');
+      if(prop.startsWith('og:')) m.setAttribute('property', prop);
+      else m.setAttribute('name', prop);
+      document.head.appendChild(m);
+    }
+    const map = {
+      'og:title': p.title, 'twitter:title': p.title,
+      'og:description': p.question, 'twitter:description': p.question,
+      'og:url': location.href
+    };
+    m.setAttribute('content', map[prop] || '');
+  });
+
+  // JSON-LD structured data
+  const ld = document.createElement('script');
+  ld.type = 'application/ld+json';
+  ld.textContent = JSON.stringify({
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline": p.title,
+    "description": p.question,
+    "author":{"@type":"Person","name":"Beneath the Text"},
+    "publisher":{"@type":"Organization","name":"Beneath the Text","url":"https://beneaththetext.org"}
+  });
+  document.head.appendChild(ld);
+
+  const root = $('#pillar-root');
+  root.innerHTML = `
+    <header class="hero">
+      <span class="eyebrow kicker">${p.kicker || 'One of the eleven questions'}</span>
+      <h1>${p.title}</h1>
+      ${p.palimpsest ? `
+        <div class="palimpsest" id="pal" tabindex="0" aria-label="Two readings, overlaid">
+          <span class="over">${p.palimpsest.over}</span>
+          <span class="under" aria-hidden="true">${p.palimpsest.under}${p.palimpsest.attribution ? `<cite>— ${p.palimpsest.attribution}</cite>` : ''}</span>
+        </div>
+        <button class="recover" id="recover" aria-pressed="false">
+          <span class="dot"></span><span id="recover-label">Let the other reading surface</span>
+        </button>
+      ` : ''}
+    </header>
+
+    <section class="block question-block">
+      <span class="eyebrow">The question</span>
+      <p style="font-size:1.18rem;font-family:'Fraunces',serif;font-weight:400;max-width:60ch;">${p.question}</p>
+    </section>
+
+    <section class="block handed">
+      <span class="eyebrow">What you were handed</span>
+      ${p.handed.map(para => `<p>${para}</p>`).join('')}
+    </section>
+
+    <section class="block">
+      <span class="eyebrow">Threads of one tradition</span>
+      <h2>${p.threads_heading || 'Several readings ran together'}</h2>
+      ${p.threads_intro ? `<p class="block-intro">${p.threads_intro}</p>` : ''}
+      <div class="threads">
+        ${p.threads.map(t => `
+          <div class="thread" data-became="${t.became}">
+            <div class="t-top">
+              <span class="t-name">${t.name}</span>
+              <span class="became">${t.became_label || t.became}</span>
+            </div>
+            <p class="t-detail">${t.detail}</p>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+
+    <section class="block">
+      <span class="eyebrow">In good company</span>
+      <h2>${p.witnesses_heading || 'Who held the quieter readings'}</h2>
+      ${p.witnesses_intro ? `<p class="block-intro">${p.witnesses_intro}</p>` : ''}
+      <div class="witnesses">
+        ${p.witnesses.map(w => `
+          <div class="witness">
+            <div class="w-head">${w.name}${w.dates ? `<span class="w-dates">${w.dates}</span>` : ''}</div>
+            ${w.standing ? `<div class="w-standing">${w.standing}</div>` : ''}
+            <p class="w-note">${w.note}</p>
+            ${w.source && w.link ? `<a class="w-source" href="${w.link}" target="_blank" rel="noopener">${w.source}</a>` : (w.source ? `<span class="w-source" style="cursor:default;border-bottom-style:dotted;">${w.source}</span>` : '')}
+          </div>
+        `).join('')}
+      </div>
+    </section>
+
+    <section class="block">
+      <span class="eyebrow">How one reading rose</span>
+      <h2>${p.ascendancy_heading || 'The root it grew from, the forces that hardened it, and the work it then did in the world'}</h2>
+      <div class="ascendancy">
+        ${p.ascendancy.map(para => `<p>${para}</p>`).join('')}
+      </div>
+    </section>
+
+    ${p.cards && p.cards.length ? `
+      <section class="block">
+        <span class="eyebrow">The text up close</span>
+        <h2>${p.cards_heading || 'Where the English Bible is doing more interpretive work than most readers realize'}</h2>
+        ${p.cards_intro ? `<p class="upclose-intro">${p.cards_intro}</p>` : ''}
+        ${p.cards.map((c, i) => `
+          <div class="card" data-card="${i}">
+            <div class="card-head">
+              <span class="card-ref">${c.ref}</span>
+              <h3 class="card-title">${c.title}</h3>
+            </div>
+            <div class="card-tabs" role="tablist">
+              <button role="tab" data-tab="traditional" aria-selected="true">Traditional</button>
+              <button role="tab" data-tab="charitable" aria-selected="false">Recovered</button>
+              <button role="tab" data-tab="lever" aria-selected="false">The lever</button>
+              <button role="tab" data-tab="flag" aria-selected="false">Honest flag</button>
+            </div>
+            <div class="card-panel" data-active="traditional">
+              <div class="p-label">Traditional rendering</div>
+              <div class="p-body">${c.traditional}</div>
+            </div>
+          </div>
+        `).join('')}
+      </section>
+    ` : ''}
+
+    ${p.moveon ? `
+      <section class="block">
+        <span class="eyebrow">Before we move on</span>
+        <div class="moveon">
+          ${p.moveon.map(para => `<p>${para}</p>`).join('')}
+        </div>
+      </section>
+    ` : ''}
+
+    ${p.matters ? `
+      <section class="block">
+        <div class="matters">
+          <span class="eyebrow">Why this matters even if you're not religious</span>
+          <p>${p.matters}</p>
+        </div>
+      </section>
+    ` : ''}
+
+    <section class="block">
+      <span class="eyebrow">Where this is contested</span>
+      <h2>The hard texts, said plainly</h2>
+      <div class="contested">
+        ${p.contested.map(para => `<p>${para}</p>`).join('')}
+      </div>
+    </section>
+
+    <section class="close-block">
+      <span class="eyebrow">Who this touches — an open door</span>
+      <h2>${p.close_heading || ''}</h2>
+      ${p.close.map(para => `<p>${para}</p>`).join('')}
+    </section>
+  `;
+
+  // wire up palimpsest
+  const pal = $('#pal');
+  const btn = $('#recover');
+  const lbl = $('#recover-label');
+  if(pal && btn){
+    let locked = false;
+    const reveal = on => {
+      pal.classList.toggle('revealed', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      lbl.textContent = on ? 'Return the surface reading' : 'Let the other reading surface';
+    };
+    pal.addEventListener('mouseenter', ()=>!locked && reveal(true));
+    pal.addEventListener('mouseleave', ()=>!locked && reveal(false));
+    pal.addEventListener('focus', ()=>!locked && reveal(true));
+    pal.addEventListener('blur', ()=>!locked && reveal(false));
+    btn.addEventListener('click', ()=>{ locked = !locked; reveal(locked); });
+  }
+
+  // wire up card tabs
+  document.querySelectorAll('.card').forEach((card, i) => {
+    const c = p.cards[i];
+    const tabs = card.querySelectorAll('.card-tabs button');
+    const panel = card.querySelector('.card-panel');
+    const labels = { traditional: 'Traditional rendering', charitable: 'Recovered rendering', lever: 'The lever', flag: 'Honest flag' };
+    const keys = { traditional: 'traditional', charitable: 'charitable', lever: 'lever', flag: 'flag' };
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const k = tab.dataset.tab;
+        tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.tab === k ? 'true' : 'false'));
+        panel.setAttribute('data-active', k);
+        panel.querySelector('.p-label').textContent = labels[k];
+        panel.querySelector('.p-body').innerHTML = c[keys[k]] || '';
+      });
+    });
+  });
+}
+</script>
+</body>
+</html>
