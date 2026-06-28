@@ -1,0 +1,87 @@
+{
+  "slug": "original-sin",
+  "title": "Original Sin — what we inherit from Adam",
+  "kicker": "Pillar 5 of 11 · What we inherit from Adam",
+  "question": "Are we born guilty of Adam's sin — or born mortal, into a world already broken? And does the difference come down to a single mistranslated word?",
+  "palimpsest": {
+    "over": "You were born guilty before God.",
+    "under": "The son shall not bear the iniquity of the father.",
+    "attribution": "Ezekiel 18:20, in the Hebrew Bible the New Testament writers read every day"
+  },
+  "handed": [
+    "That every human being is born already guilty before God — not merely fragile or prone to sin, but <strong>culpable from conception</strong>, condemned in Adam's first failure, deserving wrath from the womb; that this is why babies need to be baptized, why no one is innocent, why grace must precede everything. That this is what the Bible plainly teaches. It is one of the most foundational pieces of Western Christian self-understanding, and it is also one of the clearest cases in the whole project of a doctrine that the <strong>Jewish soil of the Bible never grew</strong>, that the <strong>early church largely did not hold</strong>, and that <strong>Augustine built on a Latin mistranslation of a single Greek phrase</strong> — and I'm aware that's a heavy claim to put up at the top of the page, so the rest of the pillar is going to walk through exactly why each piece of it is true."
+  ],
+  "threads_heading": "Two accounts of what Adam left behind",
+  "threads": [
+    {
+      "name": "Original sin / inherited guilt",
+      "became": "dominant",
+      "became_label": "the Augustinian doctrine, Western default",
+      "detail": "<strong>Heard as:</strong> \"born sinners,\" \"we have a sin nature,\" \"totally depraved,\" \"even babies need saving.\" <strong>Plainly:</strong> because of Adam's first sin, every person comes into the world <em>already guilty</em> before God — not merely mortal or weakened, but culpable from conception, which is why everyone needs saving from the moment they exist. <strong>What's at stake:</strong> what we think a newborn baby actually is."
+    },
+    {
+      "name": "Ancestral sin",
+      "became": "recovered",
+      "became_label": "the Eastern Orthodox view, never abandoned",
+      "detail": "<strong>You were probably never told this option existed.</strong> <strong>Plainly:</strong> from Adam we inherit <strong>death, weakness, and a world already broken</strong> — but not Adam's <em>guilt</em>. We're born mortal and prone to sin, born into a damaged creation, but not condemned for someone else's act. We become guilty when we ourselves sin — which, given the brokenness of the world, every one of us does. <strong>What's at stake:</strong> whether human beings begin life as criminals or as wounded creatures."
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "Ezekiel",
+      "dates": "c. 6th century BCE",
+      "standing": "Hebrew prophet, canonical scripture",
+      "note": "Flatly, in the Hebrew Bible: <strong>\"the son shall not bear the iniquity of the father, neither shall the father bear the iniquity of the son\"</strong> (18:20). The whole chapter of Ezekiel 18 is a sustained argument <em>against</em> inherited guilt — written precisely because the Israelites had begun to believe a version of it that God wanted dismantled.",
+      "source": "Ezekiel 18",
+      "link": "https://www.blueletterbible.org/kjv/eze/18/1"
+    },
+    {
+      "name": "Every Greek-speaking Christian writer before Augustine",
+      "dates": "c. 100–400",
+      "standing": "Irenaeus, Origen, Athanasius, the Cappadocians, Chrysostom",
+      "note": "Taught that what we inherit from Adam is <strong>mortality and a wounded condition</strong>, not personal guilt. The whole Eastern church has held that line for two thousand years and still holds it today. The unanimity is notable: inherited guilt is not in the pre-Augustinian Greek tradition.",
+      "source": "See each father at New Advent",
+      "link": "https://www.newadvent.org/fathers/"
+    },
+    {
+      "name": "The Eastern Orthodox Church",
+      "dates": "to this day",
+      "standing": "One of the three great branches of historic Christianity",
+      "note": "Has never accepted Augustinian inherited guilt, and continues to teach that we inherit Adam's <em>condition</em> (mortality, weakness, a disordered world) without inheriting his <em>guilt</em>. What the West calls heresy, the East has always called the obvious reading of the Greek New Testament.",
+      "source": "Orthodox theology on ancestral sin"
+    }
+  ],
+  "ascendancy_heading": "The Jewish root, the Latin preposition, and the world the doctrine then built",
+  "ascendancy": [
+    "Adam is one of the deepest figures in the Hebrew Bible, and Genesis 3 is among its most pondered stories, but on its own terms, in its own soil, the story is not about inherited guilt. It tells how death, hard labor, broken relationship, and exile from the garden entered the world; it does not say every descendant is born <em>culpable</em> for what Adam did. The Old Testament's most sustained reflection on this exact question — Ezekiel 18 — is a full-throated argument <em>against</em> the proverb \"the fathers have eaten sour grapes, and the children's teeth are set on edge,\" and Ezekiel's punchline is unambiguous: each person answers for their own sin. The Jewish soil the New Testament grew in didn't teach inherited guilt, and there's no New Testament passage where Jesus or any of the apostles teaches it directly either.",
+    "When Paul writes Romans 5, he is doing distinctively Pauline work — drawing a parallel between Adam and Christ — but he is working <strong>on Jewish soil</strong>, in continuity with his tradition rather than in opposition to it, and he never says human beings are born guilty of Adam's sin. The closest he comes is the famously dense Romans 5:12: \"as by one man sin entered into the world, and death by sin, and so death passed upon all men, <strong>for that all have sinned</strong>.\" That last phrase is six Greek words: <em>eph' hō pántes hēmarton</em>. They mean \"<strong>because</strong> all sinned\" — <em>because</em>, not <em>in whom</em>. Death spreads to all because all in fact sin, not because all share Adam's guilt at birth.",
+    "Then comes the hinge of Western Christian history. When Jerome translated the New Testament into Latin in the late fourth century, he rendered <em>eph' hō</em> as <strong>in quo</strong> — \"<strong>in whom</strong> all sinned.\" A change of a preposition. <strong>Augustine read Greek poorly</strong> and worked from the Latin Vulgate. Looking at Romans 5:12 in the Latin in front of him, he saw the doctrine staring back at him: <em>in whom</em> — in Adam — all sinned, meaning we were all somehow <em>inside</em> Adam when he sinned, sharing his act and therefore his guilt. The doctrine of inherited guilt has a textual origin, and the textual origin is a Latin preposition Augustine could not check against the Greek.",
+    "Augustine built the rest of the structure on that single beam. In long, bitter conflicts with Pelagius and then with Julian of Eclanum, his position hardened into the engine of Western anthropology: total depravity, the absolute necessity of grace, the urgency of infant baptism, the body as the carrier of sin through the sexual act. The Reformation kept and intensified this framework. Calvin's <em>total depravity</em> is Augustine's doctrine sharpened. And the doctrine did real work in the world: it made every human being, from the first breath, a defendant; it supplied the logic for centuries of pastoral terror at infant deathbeds; it taught generations to look at their own children — and themselves — as primarily guilty rather than primarily wounded."
+  ],
+  "cards_heading": "One passage, but it's the load-bearing one",
+  "cards": [
+    {
+      "ref": "Romans 5:12",
+      "title": "The preposition that built a doctrine",
+      "traditional": "<em>\"…by one man sin entered into the world, and death by sin; and so death passed upon all men, <strong>in whom</strong> all have sinned.\"</em><br><br>Read as: <em>because we were somehow in Adam when he sinned, we all share his guilt at birth.</em>",
+      "charitable": "<em>\"…by one man sin entered into the world, and death by sin; and so death passed upon all people, <strong>because</strong> all sinned.\"</em><br><br>Read as: <em>death spread to all human beings because all of them, in fact, sin — not because they shared Adam's guilt from the moment they existed.</em>",
+      "lever": "The Greek phrase is <strong>eph' hō pántes hēmarton</strong> — three small words, and the entire weight of the Western doctrine rests on the first two. <em>Eph' hō</em> is an ordinary Greek construction that means <strong>\"because\"</strong> or <strong>\"on the basis of which\"</strong>; the verb <em>hēmarton</em> is the simple aorist past — \"sinned.\" Together: \"<strong>because all sinned</strong>.\" When <strong>Jerome</strong> translated the New Testament into Latin in the late fourth century, he rendered <em>eph' hō</em> as <strong>in quo</strong> — \"<strong>in whom</strong>.\" That change of a preposition turned a causal phrase into a locative one. <em>In whom</em> implies that we were inside Adam when he sinned, sharing his act. <em>Because</em> implies only that death spread because all in fact go on to sin. <strong>Augustine, working from the Latin and reading Greek poorly, built his entire doctrine of inherited guilt on Jerome's preposition.</strong> The whole Western doctrine of original sin descends, in a way that's almost too neat to be true and yet is true, from a translator's choice of two letters.",
+      "flag": "Even with <em>eph' hō</em> rendered correctly as \"because,\" Paul is still drawing a strong Adam–Christ parallel in Romans 5, and still saying that <em>something</em> about Adam's act affected everyone who followed — the chapter as a whole is doing real theological work that no honest reading can wave away. The recovered reading does not erase the connection between Adam and us; it removes the specifically <em>forensic</em> inheritance of guilt — the claim that every newborn is personally culpable at birth. The Eastern church, holding the Greek, has always taught that we inherit Adam's <em>condition</em> (mortality, weakness, a world disordered) without inheriting his <em>guilt</em>. That is the position the Greek preposition actually supports."
+    }
+  ],
+  "moveon": [
+    "If you find yourself wanting to push back here — wanting to say <em>\"but surely Augustine wouldn't have built a doctrine on a mistranslation, somebody would have caught it\"</em> — sit with that for a minute, because I want to ask the question back rather than answer it.",
+    "If the Greek of Romans 5:12 says <em>because</em> and the Latin says <em>in whom</em>, and the entire Western doctrine of inherited guilt depends on the Latin reading rather than the Greek — who decided, somewhere between the fourth century and now, that the Latin would be the authoritative version and the Greek would be set aside? If the Eastern church has held the Greek reading for two thousand years and never taught inherited guilt — who decided, in the West, that the Eastern tradition was <em>wrong</em> about this and that the West's translation-driven innovation was <em>right</em>, and why did that decision not need to be defended at the level it's actually being made? If the verse Augustine built the doctrine on doesn't say what he thought it said — who decided that fifteen centuries of Western preaching on inherited guilt should continue without ever telling the people in the pews that the Greek and the Latin disagree?",
+    "I'm not going to answer those questions for you. But notice what they assume that almost nobody in the room you were raised in admitted: that <em>somebody chose</em> the Latin reading over the Greek, that the choice was a human choice with consequences, and that the picture of yourself as a defendant from birth — a picture that has shaped how you've thought about yourself and your children and the people you love for as long as you've held the faith — rests on a preposition that may or may not have meant what the man who built the doctrine thought it meant."
+  ],
+  "matters": "The Western world's whole moral picture of the human being — pessimistic, suspicious, ready to assume the worst about strangers and children and oneself — has been formed in large part by a doctrine that frames human beings as guilty by birth. That picture has shaped law, criminal justice, education, parenting, and even how the West has told the story of its own colonial encounters with peoples it presumed to be more fallen than itself. The Eastern Christian alternative — <em>we are wounded, not guilty; we are mortal, not condemned</em> — is not a fringe theology; it's the position of the majority of the Christian church for the majority of its history.",
+  "contested": [
+    "Romans 5:12–21 is a real and weighty passage, and Paul is doing real Adam-and-Christ work in it; nothing in this pillar treats that passage as unbiblical. The hardest verse for the recovered reading is probably Psalm 51:5 — \"I was shapen in iniquity; and in sin did my mother conceive me\" — which has traditionally been read as inherited guilt but which most scholars now read as Hebrew poetic intensification of personal contrition, not a doctrinal claim about every newborn.",
+    "The claim of this pillar is <strong>not</strong> that sin entering the world through Adam is unbiblical, or that we are born unaffected by what came before us, or that grace is not needed; the claim is narrower and stronger than that. <strong>Inherited guilt</strong> — the specific Augustinian doctrine that newborns are personally culpable before God — is a <em>Western development</em>, partly built on a Latin mistranslation, that the Jewish soil the New Testament grew in did not teach, that Jesus and Paul did not require, and that half the Christian church has always denied while remaining fully Christian."
+  ],
+  "close": [
+    "This is for the person who was told they came into the world already guilty. Who carried, from their earliest memory, a sense of being defective at the root — not because of anything they had done, but because of what they <em>were</em>. Who looked at their own newborn and was taught to see, behind the small face, an enemy of God.",
+    "You weren't given the older picture. You were given a Latin preposition, and a saint working from it sixteen hundred years ago, and a church that did its theology on his shoulders without ever going back to check his Greek. But the older picture is still here, in the same Bible, in the same Jewish soil Jesus and Paul lived in, in the same Eastern church that never went where Augustine went.",
+    "<strong>You are not a criminal who came into the world owing a debt. You are a creature who came into the world bearing wounds.</strong> Wounded by what came before, mortal because the world is mortal, in need of healing because every one of us is — and met, in Christ, not first by a verdict but by a rescue. The Good News here isn't that God has agreed to overlook your inherited guilt. It's that God came into the wound itself, took it on, and is healing it from the inside."
+  ]
+}
